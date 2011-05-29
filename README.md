@@ -1,7 +1,3 @@
-![Chat preview][chat]
-![Twitter preview][twitter]
-![IRC preview][irc]
-
 Created from another message style I can't remember the name of.
 
 **v0.5**
@@ -18,6 +14,13 @@ Created from another message style I can't remember the name of.
 
 - remove emoticons from IRC only (and possibly from twitter as well)
 
+-----
+
+![Chat preview][chat]  
+
+![Twitter preview][twitter]
+
+![IRC preview][irc]
 
 
 
