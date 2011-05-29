@@ -9,6 +9,7 @@ Created from another message style I can't remember the name of.
 - Avatar icons, except on IRC
 - Double click on Avatar icons to toggle (show username only)
 
+
 **TODO:**
 
 - remove emoticons from IRC only (and possibly from twitter as well)
