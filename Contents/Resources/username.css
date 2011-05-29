@@ -1,0 +1,12 @@
+.msgIn .username, .msgOut .username {
+	font-weight: normal;
+	display:inline-block;
+	
+}
+.msgIn .buddy, .msgOut .buddy {
+    width: 1px;
+    height:1px;
+    position: absolute;
+    bottom: 7px;
+    display:none;
+}

@@ -1,0 +1,321 @@
+/*	
+	AdiumyChat
+	Author : Pritthish Chakraborty
+	Version: 1.8
+	
+	Special thanks to Josh Bryant for the basic structure in Adium Matte
+	
+	You are not allowed to copy this stylesheet or use a derrivative for your own messagestyle. 
+	If you want to use certain functionality from it, feel free to contact me @pritthish on twitter and ask. 
+	I don't bite :)
+*/
+
+
+/****Import external stylesheets****/
+@import url(Scrollbars.css); 
+/*@import url(filetransfer.css);*/
+
+	
+/****Containers and wrappers****/
+#container {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	overflow-x: hidden;
+	padding: 0px 4px;
+	padding-left: 6px;
+	margin: 0 ;
+	vertical-align:top;
+}
+	
+#Chat {
+	padding-top:10px;
+	vertical-align:top;
+	min-height:100%; 
+}
+#spacer {
+	background:red;
+	display:block;
+	float:left;
+	height:40px;
+}
+#Header {
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-top:-4px;
+	margin-bottom:-3px;
+}
+	
+body {
+	background-color: transparent;
+	background-image: url("images/bg.png");
+	color: #eeeeee;
+	word-wrap: break-word !important;
+	word-break: break-word; /*IMPORTANT*/
+	margin-bottom: 0;
+	margin-top: 16px;
+	overflow-x: hidden;
+	text-shadow: 1px rgba(255, 255, 255, 0.4);
+}
+
+.mention {
+	background-color:#FF4C33;
+	-webkit-border-radius: 6px;
+	padding:0 4px 0 4px;
+}
+
+.IRC .username {
+	font-weight: normal;
+	display:inline-block;
+	
+}
+.IRC .buddy {
+    width: 1px;
+    height:1px;
+    position: absolute;
+    bottom: 7px;
+    display:none;
+}
+
+
+
+/****Text Selections****/
+::selection, #container::selection, .msgIn::selection, .msgOut::selection, .msg::selection, .status::selection, .time::selection, .content::selection, #Chat::selection, #container::selection, body::selection, #Header::selection, .Context::selection{
+	background:black;
+	color: white;
+}
+
+.content span::selection, .content span a::selection, .content span img::selection{
+	background:black	;
+	color: white;
+}
+.status span::selection, .time span::selection {
+	background:black;
+	color: white;
+}
+
+
+/****Animations****/
+
+@-webkit-keyframes fade-in {
+	/*Define fade in animation*/
+	0% {opacity:0;}
+	11% {opacity:0;}
+	100% {opacity:1;}
+}
+
+/*Apply fade in animation to messages*/
+.status, .msgIn, .msgOut {
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 600ms;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: alternate;
+}
+
+
+/****Link styles****/	
+.Context .status a:link, .Context .msgIn a:link, .Context .msgOut a:link  {
+ 	color: #76BBCF;
+}
+
+.status a:link, .msgIn a:link, .msgOut a:link, .FTD .button  {
+	color: #3bcfff;
+	font-weight: normal;
+	text-decoration: none;
+	-webkit-transition-property:text-shadow, color, background, border-top, border-bottom, border-left, border-right;
+	-webkit-transition-duration:400ms;
+	white-space:normal;
+	display:inline-block;
+}
+		
+.msgIn a:hover, .msgOut a:hover, .FTD .button:hover {
+	color: #A9E6FF; 
+	text-decoration: none;
+}
+		
+.msgIn a:active, .msgOut a:active, .FTD .button:active {
+	color:#ddd;
+	text-decoration: none;
+
+}
+		
+
+/****All the containers needed for the sboxes.net , rewritten to make the code much leaner than the original****/
+
+/*incoming bubble*/
+.messageIn, .messageOut {
+	border-width: 0;
+	padding:0;
+	margin:0;
+	min-height:0;
+	display:inline-block;
+}
+
+
+.content {
+	line-height:1.3em;
+	word-wrap: break-word; /*important if you want long words to break properly*/
+}
+
+/*bubble containers*/
+.msgIn, .msgOut {
+	position: relative;
+	display:block;
+	clear: both;
+	margin:3px;
+	margin-right: 56px;
+	width:100%;
+	-webkit-transition-property: margin-bottom;
+	-webkit-transition-duration: 100ms;
+}
+
+/*fade context bubbles*/
+.Context {
+	color:#999999;
+}
+
+.Context .username {
+	color:#AD608E;
+}
+
+.Context .buddy {
+	opacity:0.5;
+}
+
+.Context .buddy:hover {
+	opacity:1;
+}
+
+/*avatars*/
+.buddy {
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 3px;
+	-webkit-background-size: 20px 20px;
+	display:inline-block;
+	margin-bottom:-5px;
+}
+
+/*Usernames*/
+.username {
+	color:#FF5E9B;
+	display:none;	
+}
+
+/****Status Messages****/
+
+.status {
+	position: relative;
+	clear: both;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 11px;
+	color: #FFCC33;
+	top: 0;
+	padding-bottom: 5px;
+}
+
+
+.status span {
+	padding:3px 7px 3px 7px;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6); 
+	color: #FFCC33;
+	display:inline-block;
+	text-align:center;
+}
+
+/****Timestamps****/
+
+.msgIn .time span, .msgOut .time span {
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6); 
+	color: #FFCC33;
+	padding:3px 7px 3px 7px;
+	display:inline-block;
+	text-align:center;
+}
+
+.msgIn .time, .msgOut .time {
+	color: #535353;
+	line-height:0.9em;
+	font-size: .6em;
+	position: absolute;
+	top: 50%;
+	visibility: hidden;
+	max-width: 55px;
+	min-width:30px;
+	word-break:break-word;
+	opacity:0;
+	-webkit-transition-property: opacity, visibility;
+	-webkit-transition-duration: 400ms;
+		
+}
+
+.messageIn:hover .time, .messageOut:hover .time {
+	visibility: visible;
+	opacity:1;
+}
+
+.msgIn .time, .msgOut .time {
+	position:absolute;
+	right:-7.6em;
+	top:50%;
+	margin-top:-9px;
+}
+
+/****File Transfer Dialog****/
+
+.FTD .button  {
+		padding:3px;
+}
+
+.FTD {
+	border: solid transparent;
+	-webkit-background-origin:padding;
+	border-width: 15px 20px 13px 20px;
+	-webkit-border-image: url("images/context.png") 15 20 13 20;
+	padding:0px;
+	margin:auto;
+	min-height:0px;
+	float:left;
+	width:60%;
+	margin-left:15%;
+	margin-right:25%;
+	/*min-width:5px;
+	max-width:500px;*/
+	display:block;
+	position:static;
+	
+}
+
+
+/****PHEW! THAT WAS LONG! Now on to some other misc stuff, not much to see here really :P ****/
+
+.content img{margin-top:-2px; padding:0px; vertical-align:bottom; height:auto !important; width:auto !important;}
+
+.actionMessageUserName:after { content: " ";
+}
+
+
+.wrap {
+	max-width:500px;
+	min-width:20px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+#insert {
+	display:block;
+	position: relative;
+	clear: both;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 11px;
+	color: #535353;
+	top: 0;
+	padding-bottom: 0px;
+	height:0px;
+	background:transparent;
+}

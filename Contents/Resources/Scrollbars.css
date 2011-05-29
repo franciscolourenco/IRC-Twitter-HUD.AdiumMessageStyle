@@ -1,0 +1,279 @@
+::-webkit-scrollbar {
+    width: 20px;
+    height: 17px;
+}
+
+::-webkit-scrollbar-corner {
+	display: none;
+    background-image: url(images/corner.png);
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-corner:window-inactive {
+    background-image: url(images/corner-inactive.png);
+}
+
+::-webkit-resizer {
+    background-image: url(images/resizer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+::-webkit-resizer:window-inactive {
+    background-image: url(images/resizer-inactive.png);
+}
+
+::-webkit-scrollbar-track-piece:disabled {
+    display: none !important;
+}
+
+::-webkit-scrollbar-button {
+    display: none !important;
+}
+
+::-webkit-scrollbar-track:disabled {
+    margin: 6px;
+}
+
+/* Vertical Scrollbar Styles */
+
+::-webkit-scrollbar:vertical {
+    -webkit-border-image: url(images/vertical-button.png) 2 0 2 0;
+    border-color: transparent;
+    border-width: 0px 0;
+    background-image: url(images/vertical-button-background.png);
+    background-repeat: repeat-y;
+}
+
+::-webkit-scrollbar:vertical:corner-present {
+    border-bottom-width: 0;
+}
+
+::-webkit-scrollbar-track:vertical:disabled:corner-present {
+    margin-bottom: 5px;
+}
+
+@-webkit-keyframes fade {
+ from {
+    -webkit-border-image: url(images/thumb.png) 10 0 10 0;
+ }
+ to {
+    -webkit-border-image: url(images/vertical-thumb.png) 10 0 10 0;
+ }
+}
+
+
+::-webkit-scrollbar:vertical:window-inactive {
+    -webkit-border-image: url(images/vertical-button-inactive.png) 2 0 2 0;
+    background-image: url(images/vertical-button-background.png);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    -webkit-border-image: url(images/thumb.png) 10 0 10 0;
+    border-color: transparent;
+    border-width: 10px 0px;
+    min-height: 30px;
+	opacity:1;
+}
+
+
+
+/*::-webkit-scrollbar-thumb:vertical:active {
+    -webkit-border-image: url(images/vertical-thumb-active.png) 10 0 10 0;
+}*/
+
+/*::-webkit-scrollbar-thumb:vertical:window-inactive {
+    -webkit-border-image: url(images/vertical-thumb-inactive.png) 10 0 10 0;
+}*/
+
+::-webkit-scrollbar-track-piece:vertical:start:no-button,
+.double-end::-webkit-scrollbar-track-piece:vertical:start,
+.none::-webkit-scrollbar-track-piece:vertical:start {
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-track-piece:vertical:end:no-button,
+.double-start::-webkit-scrollbar-track-piece:vertical:end,
+.none::-webkit-scrollbar-track-piece:vertical:end {
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-track-piece:vertical:end:no-button:corner-present,
+.double-start::-webkit-scrollbar-track-piece:vertical:end:corner-present,
+.none::-webkit-scrollbar-track-piece:vertical:end:corner-present {
+    margin-bottom: 10px;
+}
+
+/*:not(.none):not(.double-end)::-webkit-scrollbar-track-piece:vertical:start:single-button,
+:not(.none):not(.double-end)::-webkit-scrollbar-track-piece:vertical:start:double-button,
+.single::-webkit-scrollbar-track-piece:vertical:start,
+.double-start::-webkit-scrollbar-track-piece:vertical:start,
+.double-both::-webkit-scrollbar-track-piece:vertical:start {
+    margin-top: -6px;
+}*/
+
+:not(.none):not(.double-start)::-webkit-scrollbar-track-piece:vertical:end:single-button,
+:not(.none):not(.double-start)::-webkit-scrollbar-track-piece:vertical:end:double-button,
+.single::-webkit-scrollbar-track-piece:vertical:end,
+.double-end::-webkit-scrollbar-track-piece:vertical:end,
+.double-both::-webkit-scrollbar-track-piece:vertical:end {
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-track:vertical:disabled {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+    border-color: transparent;
+    border-width: 10px 0;
+}
+
+::-webkit-scrollbar-track-piece:vertical:decrement {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+    border-color: transparent;
+    border-width: 10px 0 0 0;
+}
+
+::-webkit-scrollbar-track-piece:vertical:decrement:hover {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+}
+
+::-webkit-scrollbar-track-piece:vertical:decrement:active {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+}
+
+::-webkit-scrollbar-track-piece:vertical:increment {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+    border-color: transparent;
+    border-width: 0 0 10px 0;
+}
+
+::-webkit-scrollbar-track-piece:vertical:increment:hover {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+}
+
+::-webkit-scrollbar-track-piece:vertical:increment:active {
+    -webkit-border-image: url(images/vertical-track.png) 10 0 10 0;
+}
+
+/*::-webkit-scrollbar-button:vertical {
+    height: 20px;
+    -webkit-border-image: url(images/vertical-button.png) 2 0 2 0;
+    border-color: transparent;
+    border-width: 2px 0;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url(images/vertical-decrement-arrow.png), url(images/vertical-button-background.png);
+    background-repeat: no-repeat, repeat-y;
+    background-position: 3px 3px, 0 0;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover {
+    -webkit-border-image: url(images/vertical-button-hover.png) 2 0 2 0;
+    background-image: url(images/vertical-decrement-arrow.png), url(images/vertical-button-background.png);
+}
+
+::-webkit-scrollbar-button:vertical:decrement:active {
+    -webkit-border-image: url(images/vertical-button-active.png) 2 0 2 0;
+    background-image: url(images/vertical-decrement-arrow.png), url(images/vertical-button-background.png);
+}
+
+::-webkit-scrollbar-button:vertical:decrement:window-inactive {
+    -webkit-border-image: url(images/vertical-button-inactive.png) 2 0 2 0;
+    background-image: url(images/vertical-decrement-arrow.png), url(images/vertical-button-background.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-image: url(images/vertical-increment-arrow.png), url(images/vertical-button-background.png);
+    background-repeat: no-repeat, repeat-y;
+    background-position: 3px 8px, 0 0;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover {
+    -webkit-border-image: url(images/vertical-button-hover.png) 2 0 2 0;
+    background-image: url(images/vertical-increment-arrow.png), url(images/vertical-button-background.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment:active {
+    -webkit-border-image: url(images/vertical-button-active.png) 2 0 2 0;
+    background-image: url(images/vertical-increment-arrow.png), url(images/vertical-button-background.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment:window-inactive {
+    -webkit-border-image: url(images/vertical-button-inactive.png) 2 0 2 0;
+    background-image: url(images/vertical-increment-arrow.png), url(images/vertical-button-background.png);
+}
+
+:not(.single)::-webkit-scrollbar-button:double-button:vertical:start:decrement,
+.double-start::-webkit-scrollbar-button:vertical:start:decrement,
+.double-both::-webkit-scrollbar-button:vertical:start:decrement {
+    height: 14px;
+    border-bottom-width: 0;
+    background-position: 3px 3px, 0 0;
+}
+
+:not(.single)::-webkit-scrollbar-button:double-button:vertical:start:increment,
+.double-start::-webkit-scrollbar-button:vertical:start:increment,
+.double-both::-webkit-scrollbar-button:vertical:start:increment {
+    background-position: 3px 4px, 0 0;
+}
+
+:not(.single)::-webkit-scrollbar-button:double-button:vertical:end:decrement,
+.double-end::-webkit-scrollbar-button:vertical:end:decrement,
+.double-both::-webkit-scrollbar-button:vertical:end:decrement {
+    background-position: 3px 8px, 0 0;
+}
+
+:not(.single)::-webkit-scrollbar-button:double-button:vertical:end:increment,
+.double-end::-webkit-scrollbar-button:vertical:end:increment,
+.double-both::-webkit-scrollbar-button:vertical:end:increment {
+    height: 14px;
+    border-top-width: 0;
+    background-position: 3px 4px, 0 0;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment:corner-present {
+    border-bottom-width: 0;
+    height: 19px;
+}
+
+:not(.single)::-webkit-scrollbar-button:double-button:vertical:end:increment:corner-present,
+.double-end::-webkit-scrollbar-button:vertical:end:increment:corner-present,
+.double-both::-webkit-scrollbar-button:vertical:end:increment:corner-present {
+    height: 10px;
+}*/
+
+/* Forced Scrollbar Mode Styles */
+
+.single::-webkit-scrollbar-button:start:decrement,
+.single::-webkit-scrollbar-button:end:increment {
+    display: none;
+}
+
+.single::-webkit-scrollbar-button:start:increment,
+.single::-webkit-scrollbar-button:end:decrement {
+    display: none;
+}
+
+.double-end::-webkit-scrollbar-button:start {
+    display: none;
+}
+
+.double-end::-webkit-scrollbar-button:end {
+    display: block;
+}
+
+.double-start::-webkit-scrollbar-button:start {
+    display: block;
+}
+
+.double-start::-webkit-scrollbar-button:end {
+    display: none;
+}
+
+.double-both::-webkit-scrollbar-button {
+    display: block;
+}
+
+.none::-webkit-scrollbar-button {
+    display: none;
+}
