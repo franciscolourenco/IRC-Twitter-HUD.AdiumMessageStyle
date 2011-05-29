@@ -1,5 +1,6 @@
 Created from another message style I can't remember the name of.
 
+#Changelog
 **v0.5**
 
 - HUD Style
@@ -7,21 +8,17 @@ Created from another message style I can't remember the name of.
 - Primary colors scheme
 - Message fade in effect
 - Avatar icons, except on IRC
-- Double click on Avatar icons to toggle (show username only)
-  
+- Double click on Avatar icons to toggle (show username only)  
 
-**TODO:**
+#TODO:
 
 - remove emoticons from IRC only (and possibly from twitter as well)
-  
 
-**Preview** 
+#Preview
 
 ![Chat preview][chat]  
-
-![Twitter preview][twitter]
-
-![IRC preview][irc]
+![Twitter preview][twitter]  
+![IRC preview][irc]  
 
 
 
