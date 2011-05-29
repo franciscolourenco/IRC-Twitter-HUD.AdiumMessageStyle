@@ -22,6 +22,6 @@ Created from another message style I can't remember the name of.
 
 
 
-[chat]: url/to/image  "Chat"
-[twitter]: url/to/image  "Twitter"
-[irc]: url/to/image  "IRC"
+[chat]: http://www.adiumxtras.com/images/pictures/irc_twitter_hud_5_18499_8026_thumb_12460.png  "Chat"
+[twitter]: http://www.adiumxtras.com/images/pictures/irc_twitter_hud_5_18499_8026_thumb_12461.png  "Twitter"
+[irc]: http://www.adiumxtras.com/images/pictures/irc_twitter_hud_5_18499_8026_thumb_12462.png  "IRC"
