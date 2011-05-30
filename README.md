@@ -13,6 +13,7 @@ Created from another message style I can't remember the name of.
 #TODO:
 
 - remove emoticons from IRC only (and possibly from twitter as well)
+- tooltip showing username on avatar mouseover
 
 #Preview
 
