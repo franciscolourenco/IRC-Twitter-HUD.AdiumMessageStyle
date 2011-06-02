@@ -1,6 +1,6 @@
-Created from another message style I can't remember the name of.
+Created from [HUDChat][HUDChat]
 
-#Changelog
+#Changelogl
 **v0.5**
 
 - HUD Style
@@ -23,7 +23,7 @@ Created from another message style I can't remember the name of.
 
 
 
-
+[HUDChat]: http://www.adiumxtras.com/index.php?a=xtras&xtra_id=7839  "HUDChat"
 [chat]: http://www.adiumxtras.com/images/pictures/irc_twitter_hud_5_18499_8026_thumb_12460.png  "Chat"
 [twitter]: http://www.adiumxtras.com/images/pictures/irc_twitter_hud_5_18499_8026_thumb_12461.png  "Twitter"
 [irc]: http://www.adiumxtras.com/images/pictures/irc_twitter_hud_5_18499_8026_thumb_12462.png  "IRC"
