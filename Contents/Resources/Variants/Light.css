@@ -1,0 +1,31 @@
+body {
+	background-color: #FEFFFE;
+	background-image: none;
+	color: #111;
+}
+.username {
+	color: #000;
+	font-weight: bold;
+}
+.msgOut {
+	margin: 0;
+	background-color: #F3F5F7;
+	border-top: 1px solid #D8D8D8;
+}
+.msgOut.consecutive {
+	border-top: 0;
+}
+.msgIn {
+	border-top: 1px solid #D8D8D8;
+}
+.msgIn.consecutive {
+	border-top: 0;
+}
+
+.messageIn, .messageOut {
+	margin: 0 11px 0 11px;
+}
+
+#container {
+	padding: 0;
+}

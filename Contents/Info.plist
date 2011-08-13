@@ -21,13 +21,13 @@
 	<key>DefaultBackgroundColor</key>
 	<string>ffffff</string>
 	<key>DefaultFontFamily</key>
-	<string>Helvetica</string>
+	<string>Lucida Grande</string>
 	<key>DefaultFontSize</key>
 	<integer>12</integer>
 	<key>DefaultVariant</key>
 	<string>Pro - Grey vs Grey</string>
 	<key>DisableCombineConsecutive</key>
-	<true/>
+	<false/>
 	<key>DisableCustomBackground</key>
 	<true/>
 	<key>DefaultBackgroundIsTransparent</key>

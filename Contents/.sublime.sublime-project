@@ -1,0 +1,567 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin: margin: T R B L"
+			],
+			[
+				"bo",
+				"border: border-bottom-width: size"
+			],
+			[
+				"0",
+				"0"
+			],
+			[
+				"pa",
+				"padding: padding: all"
+			],
+			[
+				"marg",
+				"margin: margin: T R B L"
+			],
+			[
+				"bar",
+				"div.foo#bar"
+			],
+			[
+				"pecas",
+				"div#peca.pecas"
+			],
+			[
+				"html",
+				"html"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"for",
+				"for: for …"
+			],
+			[
+				"ver",
+				"verasans"
+			],
+			[
+				"di",
+				"div"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"r",
+				"ret1: return true"
+			],
+			[
+				"G",
+				"GLOBALS  (variable)"
+			],
+			[
+				"m",
+				"margin: margin: T R B L"
+			],
+			[
+				"mh",
+				"min-height:   (property)"
+			],
+			[
+				"displ",
+				"display: display: inline"
+			],
+			[
+				"dis",
+				"display: display: block"
+			],
+			[
+				"re",
+				"recoreco  (variable)"
+			],
+			[
+				"ife",
+				"ifelse: if … else …"
+			],
+			[
+				"if",
+				"ifelse: if … else …"
+			],
+			[
+				"myc",
+				"mysql_connect"
+			],
+			[
+				"mysconne",
+				"mysqli_connect  (function)"
+			],
+			[
+				"win",
+				"winHeight  (variable)"
+			],
+			[
+				"co",
+				"color: color: name"
+			],
+			[
+				"fon",
+				"font: font-weight: weight"
+			],
+			[
+				"sy",
+				"styleSheets"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"fun",
+				"fun: Function"
+			],
+			[
+				"web",
+				"-webkit-mask-position-y:   (property)"
+			],
+			[
+				"ali",
+				"alignment-adjust:   (property)"
+			],
+			[
+				"in",
+				"incl1: include_once …"
+			],
+			[
+				"incl",
+				"incl: include …"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Variants/Light.css",
+			"settings":
+			{
+				"buffer_size": 411,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Outgoing/Context.html",
+			"settings":
+			{
+				"buffer_size": 437,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Outgoing/Content.html",
+			"settings":
+			{
+				"buffer_size": 407,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Incoming/Context.html",
+			"settings":
+			{
+				"buffer_size": 433,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Incoming/Content.html",
+			"settings":
+			{
+				"buffer_size": 441,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Info.plist",
+			"settings":
+			{
+				"buffer_size": 1153,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 103,
+		"selected_items":
+		[
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"",
+				"View: Toggle Side Bar"
+			]
+		],
+		"width": 568
+	},
+	"console":
+	{
+		"height": 123
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/main.css",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/test.php",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/text.html",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Template.html",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Header.html",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Incoming/test.html",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/test.js",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Incoming/Context.html",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/images/bg.png",
+		"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Variants/Classic - Aqua vs Aqua Light.css",
+		"/Users/user/.zshrc",
+		"/Users/user/.dotfiles/.git/COMMIT_EDITMSG",
+		"/Users/user/.gitconfig",
+		"/Users/user/Dropbox/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/.git/COMMIT_EDITMSG",
+		"/Users/user/Dropbox/Library/Application Support/Sublime Text 2/Packages/Theme - Soda/Soda Light.sublime-theme",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/user/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/user/Sites/Type-To-Navigate/typetonavigate.safariextension/injection.js",
+		"/Users/user/.dotfiles/gitconfig",
+		"/Users/user/Sites/vertexnet/index.php",
+		"/Users/user/Sites/Type-To-Navigate/typetonavigate.safariextension/Settings.plist",
+		"/Users/user/Sites/Type-To-Navigate/typetonavigate.safariextension/manifest.json",
+		"/Users/user/Sites/Type-To-Navigate/typetonavigate.png"
+	],
+	"find":
+	{
+		"height": 33
+	},
+	"find_in_files":
+	{
+		"height": 86,
+		"include_history":
+		[
+			""
+		],
+		"location_history":
+		[
+			"<open folders>",
+			"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Consecutivization",
+			"Grande",
+			"Content.html",
+			"backgro",
+			"[",
+			",",
+			"f",
+			"find_selected_text",
+			"duplica",
+			"word",
+			"18",
+			"Soda",
+			",",
+			"Soda",
+			"18",
+			"4",
+			"desc",
+			"group",
+			"preexec",
+			"safari.extension.settings",
+			"retrieveSettingsFromLocalStorage",
+			"instapaperPassword",
+			"selectedTextEqualsNextSearchString",
+			"selectedTextEqualsNextSearchString(",
+			"next",
+			"re"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"["
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	{
+		"mount_points":
+		[
+			"/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle"
+		]
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Variants/Light.css",
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Outgoing/Context.html",
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Outgoing/Content.html",
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Incoming/Context.html",
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Resources/Incoming/Content.html",
+					"settings":
+					{
+						"buffer_size": 441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/user/Library/Application Support/Adium 2.0/Message Styles/IRC Twitter HUD.AdiumMessageStyle/Contents/Info.plist",
+					"settings":
+					{
+						"buffer_size": 1153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1046,
+								1046
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0
+	},
+	"input":
+	{
+		"height": 29
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0,
+			1
+		],
+		"rows":
+		[
+			0,
+			1
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0,
+		"selected_items":
+		[
+			[
+				"main",
+				"Contents/Resources/main.css"
+			],
+			[
+				"li",
+				"Contents/Resources/Variants/Light.css"
+			],
+			[
+				"lig",
+				"Contents/Resources/Variants/Light.css"
+			]
+		],
+		"width": 0
+	},
+	"select_project":
+	{
+		"height": 500,
+		"selected_items":
+		[
+		],
+		"width": 380
+	},
+	"show_minimap": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 250,
+	"status_bar_visible": false
+}

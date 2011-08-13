@@ -1,21 +1,21 @@
-/*	
+/*
 	AdiumyChat
 	Author : Pritthish Chakraborty
 	Version: 1.8
-	
+
 	Special thanks to Josh Bryant for the basic structure in Adium Matte
-	
-	You are not allowed to copy this stylesheet or use a derrivative for your own messagestyle. 
-	If you want to use certain functionality from it, feel free to contact me @pritthish on twitter and ask. 
+
+	You are not allowed to copy this stylesheet or use a derrivative for your own messagestyle.
+	If you want to use certain functionality from it, feel free to contact me @pritthish on twitter and ask.
 	I don't bite :)
 */
 
 
 /****Import external stylesheets****/
-@import url(Scrollbars.css); 
+/*@import url(Scrollbars.css);*/
 /*@import url(filetransfer.css);*/
 
-	
+
 /****Containers and wrappers****/
 #container {
 	position: absolute;
@@ -30,11 +30,11 @@
 	margin: 0 ;
 	vertical-align:top;
 }
-	
+
 #Chat {
 	padding-top:10px;
 	vertical-align:top;
-	min-height:100%; 
+	min-height:100%;
 }
 #spacer {
 	background:red;
@@ -48,7 +48,7 @@
 	margin-top:-4px;
 	margin-bottom:-3px;
 }
-	
+
 body {
 	background-color: transparent;
 	background-image: url("images/bg.png");
@@ -68,9 +68,7 @@ body {
 }
 
 .IRC .username {
-	font-weight: normal;
 	display:inline-block;
-	
 }
 .IRC .buddy {
     width: 1px;
@@ -116,7 +114,7 @@ body {
 }
 
 
-/****Link styles****/	
+/****Link styles****/
 .Context .status a:link, .Context .msgIn a:link, .Context .msgOut a:link  {
  	color: #76BBCF;
 }
@@ -130,18 +128,18 @@ body {
 	white-space:normal;
 	display:inline-block;
 }
-		
+
 .msgIn a:hover, .msgOut a:hover, .FTD .button:hover {
-	color: #A9E6FF; 
+	color: #A9E6FF;
 	text-decoration: none;
 }
-		
+
 .msgIn a:active, .msgOut a:active, .FTD .button:active {
 	color:#ddd;
 	text-decoration: none;
 
 }
-		
+
 
 /****All the containers needed for the sboxes.net , rewritten to make the code much leaner than the original****/
 
@@ -189,7 +187,7 @@ body {
 	opacity:1;
 }
 
-/*avatars*/
+/*avatar	s*/
 .buddy {
 	width: 20px;
 	height: 20px;
@@ -202,7 +200,7 @@ body {
 /*Usernames*/
 .username {
 	color:#FF5E9B;
-	display:none;	
+	display:none;
 }
 
 /****Status Messages****/
@@ -221,7 +219,7 @@ body {
 
 .status span {
 	padding:3px 7px 3px 7px;
-	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6); 
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
 	color: #FFCC33;
 	display:inline-block;
 	text-align:center;
@@ -230,7 +228,7 @@ body {
 /****Timestamps****/
 
 .msgIn .time span, .msgOut .time span {
-	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6); 
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
 	color: #FFCC33;
 	padding:3px 7px 3px 7px;
 	display:inline-block;
@@ -250,7 +248,7 @@ body {
 	opacity:0;
 	-webkit-transition-property: opacity, visibility;
 	-webkit-transition-duration: 400ms;
-		
+
 }
 
 .messageIn:hover .time, .messageOut:hover .time {
@@ -287,7 +285,7 @@ body {
 	max-width:500px;*/
 	display:block;
 	position:static;
-	
+
 }
 
 

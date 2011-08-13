@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html 
+<!DOCTYPE html
      PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -9,12 +9,12 @@
 
 	<link rel="alternate stylesheet" type="text/css" media="screen" title="username" href="username.css" />
     <link rel="alternate stylesheet" type="text/css" media="screen" title="usernameavatar" href="usernameavatar.css" />
-	
+
 	<script type="text/javascript" defer="defer">
 //Appending new content to the message view
 		function appendMessage(html) {
 			shouldScroll = nearBottom();
-		
+
 			//Remove any existing insertion point
 			insert = document.getElementById("insert");
 			if(insert) insert.parentNode.removeChild(insert);
@@ -25,7 +25,7 @@
 			range.selectNode(chat);
 			documentFragment = range.createContextualFragment(html);
 			chat.appendChild(documentFragment);
-			
+
 			alignChat(shouldScroll);
 		}
 		function appendMessageNoScroll(html) {
@@ -55,7 +55,7 @@
 				insert.parentNode.replaceChild(newNode,insert);
 
 				alignChat(shouldScroll);
-			} 
+			}
 			else {
 				appendMessage(html);
 			}
@@ -71,14 +71,14 @@
 
 				//swap
 				insert.parentNode.replaceChild(newNode,insert);
-			} 
+			}
 			else {
 				appendMessageNoScroll(html);
 			}
 		}
 		function replaceLastMessage(html){
 			shouldScroll = nearBottom();
-		
+
 				//Retrieve the current insertion point, then remove it
 				//This requires that there have been an insertion point... is there a better way to retrieve the last element? -evands
 				var insert = document.getElementById("insert");
@@ -106,7 +106,7 @@
 		var intervall_scroll;
 		function scrollToBottom() {
 			document.body.scrollTop = document.body.offsetHeight;
-		} 
+		}
 
 		//Dynamically exchange the active stylesheet
 		function setStylesheet( id, url ) {
@@ -120,10 +120,10 @@
 			head.removeChild( document.getElementById( id ) );
 			head.appendChild( documentFragment );
 		}
-		
+
 		//Swap an image with its alt-tag text on click, or expand/unexpand an attached image
 		document.onclick = imageCheck;
-		function imageCheck() {		
+		function imageCheck() {
 			node = event.target;
 			if(node.tagName == 'IMG' && !client.zoomImage(node) && node.alt) {
 				a = document.createElement('a');
@@ -145,10 +145,10 @@
 			img.setAttribute('alt', node.firstChild.nodeValue);
 			img.className = node.className;
 			node.parentNode.replaceChild(img, node);
-			
+
 			alignChat(shouldScroll);
 		}
-		
+
 		//Align our chat to the bottom of the window.  If true is passed, view will also be scrolled down
 		function alignChat(shouldScroll) {
 			var windowHeight = window.innerHeight;
@@ -166,48 +166,51 @@
 
 			if (shouldScroll) scrollToBottom();
 		}
-		
+
 		function windowDidResize(){
 			alignChat(true/*nearBottom()*/); //nearBottom buggy with inactive tabs
 		}
-		
+
 		// Kill this because we add something better later.
 		window.onresize = windowDidResize;
-			
+
 	/******************************************
 	***  Extra, unique javascript goodness  ***
 	*******************************************
-	
+
 	There are several small issues that this javascript solves. It's included in Template.html as this will mean it's always included - unlike Header.html, which is optional..
-	
+
 	*/
-	
-	
+
+
 	// Global variables we'll use to refer to specific stylesheet declarations.
 	var theDiv;
-	
+
 	// Global variable which will store the window height from last time the window was resized; useful later!
 	var winHeight = window.innerHeight;
-	
+
 	// Add listeners to do stuff on resize.
 	window.addEventListener("load",writeRandomColour,false);
 	window.addEventListener("resize",newResizeHandler,false);
 
-	
+
 	// This is a clone of the old, instant - non-smooth - scrolling function, condensed slightly. This means we don't have to use the smooth scrolling for manual resizing (it looks weird, and doesn't feel as snappy as instant scrolling).
 	function newResizeHandler()
 	{
 		var windowHeight = window.innerHeight;
+
+
+
 		if (windowHeight > 0) {
 
 				d_container.scrollTop = d_chat.offsetHeight;
 
-	
-	
-		} 
-		 
-		
-		
+
+
+		}
+
+
+
 		// If the window height jumps more than 5 pixels instantaneously, chances are it's due to the text entry area shrinking after a message is sent, rather than a manual resize event. So, we call the smooth scrolling function in that case, otherwise we jump straight to the bottom.
 	//	var chatHeight = d_chat.innerHeight;
 	//	(chatHeight - winHeight > 5 ? scrollToBottom() : d_container.scrollTop = d_chat.offsetHeight)
@@ -223,7 +226,7 @@
 			// By our template, the second stylesheet ("1") is the variant.
 				if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/New - Shuffle All.css") ;')
 				{
-					var CSSpages=new Array( 
+					var CSSpages=new Array(
 						'Variants/New - Aqua vs Aqua Light.css',
 						'Variants/New - Aqua vs Aqua.css',
 						'Variants/New - Aqua vs Graphite.css',
@@ -276,15 +279,15 @@
 						'Variants/New - White vs Purple.css',
 						'Variants/New - White vs White.css',
 						'Variants/New - White vs Yellow.css'
-					); 
+					);
 					shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 					style = shuffleStyle;
 					stripCSS(style, 9);
 				}
-				
+
 					else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/New - Shuffle (Outgoing Aqua).css") ;')
 					{
-						var CSSpages=new Array( 
+						var CSSpages=new Array(
 							'Variants/New - Aqua vs Aqua Light.css',
 							'Variants/New - Aqua vs Graphite.css',
 							'Variants/New - Aqua vs Green.css',
@@ -298,16 +301,16 @@
 							'Variants/New - Aqua vs White.css',
 							'Variants/New - Aqua vs Yellow.css'
 
-						); 
+						);
 						shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 						style = shuffleStyle;
 						stripCSS(style, 9);
 					}
-					
-					
+
+
 					else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/New - Shuffle (Outgoing Graphite).css") ;')
 					{
-						var CSSpages=new Array( 
+						var CSSpages=new Array(
 							'Variants/New - Graphite vs Aqua Light.css',
 							'Variants/New - Graphite vs Aqua.css',
 							'Variants/New - Graphite vs Green.css',
@@ -321,16 +324,16 @@
 							'Variants/New - Graphite vs White.css',
 							'Variants/New - Graphite vs Yellow.css'
 
-						); 
+						);
 						shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 						style = shuffleStyle;
 						stripCSS(style, 9);
 					}
-					
-					
+
+
 						else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/New - Shuffle (Outgoing Green).css") ;')
 						{
-							var CSSpages=new Array( 
+							var CSSpages=new Array(
 								'Variants/New - Green vs Aqua Light.css',
 								'Variants/New - Green vs Aqua.css',
 								'Variants/New - Green vs Graphite.css',
@@ -344,14 +347,14 @@
 								'Variants/New - Green vs White.css',
 								'Variants/New - Green vs Yellow.css'
 
-							); 
+							);
 							shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 							style = shuffleStyle;
 							stripCSS(style, 9);
 						}
 							else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/New - Shuffle (Outgoing White).css") ;')
 							{
-								var CSSpages=new Array( 
+								var CSSpages=new Array(
 									'Variants/New - White vs Aqua Light.css',
 									'Variants/New - White vs Aqua.css',
 									'Variants/New - White vs Graphite.css',
@@ -365,17 +368,17 @@
 									'Variants/New - White vs Purple.css',
 									'Variants/New - White vs Yellow.css'
 
-								); 
+								);
 								shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 								style = shuffleStyle;
 								stripCSS(style, 9);
-									
+
 							}
-							
-							
+
+
 							else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/Classic - Shuffle All.css") ;')
 							{
-								var CSSpages=new Array( 
+								var CSSpages=new Array(
 									'Variants/Classic - Aqua vs Aqua Light.css',
 									'Variants/Classic - Aqua vs Aqua.css',
 									'Variants/Classic - Aqua vs Graphite.css',
@@ -428,14 +431,14 @@
 									'Variants/Classic - White vs Purple.css',
 									'Variants/Classic - White vs White.css',
 									'Variants/Classic - White vs Yellow.css'
-								); 
+								);
 								shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 								style = shuffleStyle;
 								stripCSS(style, 9);
 							}
 							else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/Classic - Shuffle (Outgoing Aqua).css") ;')
 							{
-								var CSSpages=new Array( 
+								var CSSpages=new Array(
 									'Variants/Classic - Aqua vs Aqua Light.css',
 									'Variants/Classic - Aqua vs Graphite.css',
 									'Variants/Classic - Aqua vs Green.css',
@@ -449,7 +452,7 @@
 									'Variants/Classic - Aqua vs White.css',
 									'Variants/Classic - Aqua vs Yellow.css'
 
-								); 
+								);
 								shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 								style = shuffleStyle;
 								stripCSS(style, 9);
@@ -458,7 +461,7 @@
 
 							else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/Classic - Shuffle (Outgoing Graphite).css") ;')
 							{
-								var CSSpages=new Array( 
+								var CSSpages=new Array(
 									'Variants/Classic - Graphite vs Aqua Light.css',
 									'Variants/Classic - Graphite vs Aqua.css',
 									'Variants/Classic - Graphite vs Green.css',
@@ -472,7 +475,7 @@
 									'Variants/Classic - Graphite vs White.css',
 									'Variants/Classic - Graphite vs Yellow.css'
 
-								); 
+								);
 								shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 								style = shuffleStyle;
 								stripCSS(style, 9);
@@ -481,7 +484,7 @@
 
 								else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/Classic - Shuffle (Outgoing Green).css") ;')
 								{
-									var CSSpages=new Array( 
+									var CSSpages=new Array(
 										'Variants/Classic - Green vs Aqua Light.css',
 										'Variants/Classic - Green vs Aqua.css',
 										'Variants/Classic - Green vs Graphite.css',
@@ -495,14 +498,14 @@
 										'Variants/Classic - Green vs White.css',
 										'Variants/Classic - Green vs Yellow.css'
 
-									); 
+									);
 									shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 									style = shuffleStyle;
 									stripCSS(style, 9);
 								}
 									else if(document.styleSheets[1].cssRules[0].cssText == '@import url("Variants/Classic - Shuffle (Outgoing White).css") ;')
 									{
-										var CSSpages=new Array( 
+										var CSSpages=new Array(
 											'Variants/Classic - White vs Aqua Light.css',
 											'Variants/Classic - White vs Aqua.css',
 											'Variants/Classic - White vs Graphite.css',
@@ -516,18 +519,18 @@
 											'Variants/Classic - White vs Purple.css',
 											'Variants/Classic - White vs Yellow.css'
 
-										); 
+										);
 										shuffleStyle = new String(CSSpages[Math.floor(Math.random()*(CSSpages.length))]);
 										style = shuffleStyle;
 										stripCSS(style, 9);
 
-									}							
-							
-							
+									}
+
+
 							else {
 							//	style = new String(document.styleSheets[1].cssRules[0].cssText);
 							//s	stripCSS(style, 22);
-								
+
 							}
 		}
 	}
@@ -547,7 +550,7 @@
 		cssNodeOutgoing.href = "Bubbles-CSS/out/" + bubble + "/" + outgoing + ".css";
 		cssNodeOutgoing.id = 'addedStyleOutgoing';
 		document.getElementsByTagName("head")[0].appendChild(cssNodeOutgoing);
-		
+
 	}
 	function stripCSS(style, num){
 		splitStyle=style.split(" vs "); //split string at vs
@@ -557,10 +560,10 @@
 		outgoing = new String(splitname[1]); // set outgoing color
 		splitOut=splitStyle[1].split(".css"); //strip .css from incoming
 		incoming = new String(splitOut[0]); // set incoming color
-		createStyles(incoming, outgoing, bubble); //create styles		
-		
+		createStyles(incoming, outgoing, bubble); //create styles
+
 	}
-	
+
 	function setStylesheet(title, randomize){ //Main stylesheet switcher function. Second parameter if defined causes a random alternate stylesheet (including none) to be enabled
 	var i, cacheobj, altsheets=[""]
 	for(i=0; (cacheobj=document.getElementsByTagName("link")[i]); i++) {
@@ -584,7 +587,7 @@
 	}
 	}
 
-	
+
 	var name = 0;
 	function toggleName()
 	{
@@ -601,16 +604,16 @@
 	//	setTimeout ("scrollToBottom();", 450);
 		}
 	}
-	
+
 	</script>
 	<!-- This style is shared by all variants. !-->
-	<style id="baseStyle" type="text/css" media="screen,print">	
-		%@  
+	<style id="baseStyle" type="text/css" media="screen,print">
+		%@
 		*{ word-wrap:break-word; }
 		.scaledToFitImage { position:relative; height:100px !important; width:100px !important; max-height:100%; max-width:100%;}
 	</style>
 
-	
+
 	<!-- Although we call this mainStyle for legacy reasons, it's actually the variant style !-->
 	<style id="mainStyle" type="text/css" media="screen,print">@import url( "%@" );</style>
 
